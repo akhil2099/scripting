@@ -1,0 +1,17 @@
+------------------------------------------------------------
+if you want to get mail after every successful restart then
+------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------------------------------
+step 1: open crontab using the command $crontab -e
+step 2: provide the command :-
+
+	@reboot cd [your_script_location] && bash file_system_mail.sh >> [your_log_path] 2>&1
+
+step 3: view your scheduled cronjob using the command $crontab -l
+---------------------------------------------------------------------------------------------
+
+
